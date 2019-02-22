@@ -1,0 +1,23 @@
+.container {
+  background: gray;
+  display: flex;
+  justify-content: center; }
+  .container .main {
+    border: solid 1px black;
+    background: #CCFFFF;
+    height: 100%;
+    min-width: 800px; }
+    .container .main button {
+      height: 50px;
+      width: 100%; }
+    .container .main .counter {
+      height: 50px;
+      min-width: 800px;
+      background: #CCFFFF; }
+      .container .main .counter:nth-child(even) {
+        background: #888888; }
+    .container .main .content .counter {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }

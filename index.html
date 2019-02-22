@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		dojoConfig = {
+			parseOnLoad: false,
+			packages: [{
+				name: "widgets",
+				location: location.pathname.replace(/\/[^/]*$/, '') + '/widgets'
+			}]
+		}
+	</script>
+	<base href="/dojo/training-dojo-taibh/">
+	<script src='http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js'></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+
+	<script>
+		require([
+			"dojo/parser",
+			"widgets/FancyCounter"
+		], function (parser, ready) {
+			parser.parse();
+		});
+	</script>
+</head>
+
+<body class="container">
+	<div data-dojo-type="FancyCounter" data-dojo-props="counterButton:'Press Me'"></div>
+</body>
+
+</html>
